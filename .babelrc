@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    // formily/element-plus 按需打包
+    [
+      "import",
+      {
+        "libraryName": "@formily/element-plus",
+        "libraryDirectory": "esm",
+        "style": true
+      }
+    ]
+  ]
+}

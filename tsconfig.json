@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "esnext",
+    "strict": true,
+    "jsx": "preserve",
+    "moduleResolution": "node",
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "forceConsistentCasingInFileNames": true,
+    "useDefineForClassFields": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": ["webpack-env"],
+    "paths": {
+      "@/*": ["src/*"]
+    },
+    "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
+  },
+  "include": [
+    "./packages/**/src/**/*.ts",
+    "./packages/**/src/**/*.js",
+    "./packages/**/src/**/*.tsx",
+    "./packages/**/src/**/*.vue",
+    "./packages/**/tests/**/*.ts",
+    "./packages/**/tests/**/*.tsx",
+    "shims-vue.d.ts"
+  ],
+  "exclude": ["node_modules"]
+}

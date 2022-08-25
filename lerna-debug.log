@@ -1,0 +1,19 @@
+0 silly argv {
+0 silly argv   _: [ 'create' ],
+0 silly argv   lernaVersion: '5.4.3',
+0 silly argv   '$0': 'C:\\Program Files\\nodejs\\node_modules\\lerna\\cli.js',
+0 silly argv   name: 'saas-pc'
+0 silly argv }
+1 notice cli v5.4.3
+2 verbose rootPath D:\Software\aWork\saas-2.0
+3 warn ENOREMOTE No git remote found, skipping repository property
+4 error TypeError: Cannot read properties of undefined (reading 'trim')
+4 error     at module.exports (C:\Users\hyy520\AppData\Roaming\nvm\v16.16.0\node_modules\lerna\node_modules\validate-npm-package-license\index.js:60:20)
+4 error     at C:\Users\hyy520\AppData\Roaming\nvm\v16.16.0\node_modules\lerna\node_modules\@lerna\create\lib\lerna-module-data.js:140:19
+4 error     at PromZard.<anonymous> (C:\Users\hyy520\AppData\Roaming\nvm\v16.16.0\node_modules\lerna\node_modules\promzard\promzard.js:226:19)
+4 error     at onError (C:\Users\hyy520\AppData\Roaming\nvm\v16.16.0\node_modules\lerna\node_modules\read\lib\read.js:94:12)
+4 error     at Interface.<anonymous> (C:\Users\hyy520\AppData\Roaming\nvm\v16.16.0\node_modules\lerna\node_modules\read\lib\read.js:66:5)
+4 error     at Interface.emit (node:events:527:28)
+4 error     at Interface._ttyWrite (node:readline:1081:16)
+4 error     at ReadStream.onkeypress (node:readline:288:10)
+4 error     at ReadStream.emit (node:events:527:28)

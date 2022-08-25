@@ -1,0 +1,1 @@
+"use strict";(self["webpackChunkroot"]=self["webpackChunkroot"]||[]).push([[443],{2861:function(n,t,r){r.r(t),r.d(t,{default:function(){return l}});var u=r(3396);const a={class:"about"},e=(0,u._)("h1",null,"This is an about page",-1),o=[e];function s(n,t){return(0,u.wg)(),(0,u.iD)("div",a,o)}var c=r(89);const i={},f=(0,c.Z)(i,[["render",s]]);var l=f}}]);
