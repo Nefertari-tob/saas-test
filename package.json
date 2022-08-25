@@ -9,7 +9,9 @@
     "serve:pc": "cross-env VUE_APP_PROJECT_NAME=pc vue-cli-service serve",
     "serve:mobile": "cross-env VUE_APP_PROJECT_NAME=mobile vue-cli-service serve",
     "build:pc": "cross-env VUE_APP_PROJECT_NAME=pc vue-cli-service build",
-    "build:mobile": "cross-env VUE_APP_PROJECT_NAME=mobile vue-cli-service build"
+    "build:mobile": "cross-env VUE_APP_PROJECT_NAME=mobile vue-cli-service build",
+    "prepare": "husky install",
+    "lint-staged": "lint-staged"
   },
   "dependencies": {
     "@formily/core": "^2.2.0",
@@ -41,20 +43,15 @@
     "cross-env": "^7.0.3",
     "eslint": "^7.32.0",
     "eslint-plugin-vue": "^8.0.3",
-    "husky": "4.0.7",
+    "husky": "^7.0.1",
     "lerna": "^5.4.3",
     "lint-staged": "10.0.0",
     "sass": "^1.32.7",
     "sass-loader": "^12.0.0",
     "typescript": "~4.5.5"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "yarn lint-staged"
-    }
-  },
   "lint-staged": {
-    "./packages/**/**/*.{js,jsx,ts,tsx,vue}": "eslint --ext .js,.jsx,.ts,.tsx,.vue ",
+    "./packages/**/**/*.{js,jsx,ts,tsx,vue}": "eslint --ext .js,.jsx,.ts,.tsx,.vue src",
     "./packages/**/**/*.{js,jsx,tsx,ts,less,md,json,vue}": [
       "git add"
     ]

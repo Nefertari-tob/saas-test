@@ -2,11 +2,14 @@ import { defineStore } from "pinia";
 
 const useStore = defineStore("main", {
   // other options...
-  state: () => {
-    return {};
+  state:()=> {
+    return{    };
   },
-  getters: {},
-  actions: {},
+getters:{
+
+
+        },
+actions: {},
 });
 
 export default useStore;

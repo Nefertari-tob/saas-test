@@ -3,18 +3,15 @@ export const schema = {
     labelCol: 6,
     wrapperCol: 24,
     colon: false,
-    feedbackLayout: "loose",
-    size: "default",
-    layout: "horizontal",
-    tooltipLayout: "icon",
-    labelAlign: "right",
-    wrapperAlign: "left",
-    shallow: true,
-    bordered: true,
-    style: {
-      opacity: 1,
-    },
-  },
+    feedbackLayout: 'loose',
+    size:"default",
+    layout:'horizontal',
+    tooltipLayout:"icon",
+    labelAlign:"right",
+    wrapperAlign:"left","shallow": true,
+    "bordered": true,"style": {
+      opacity: 1,},
+},
   schema: {
     type: "object",
     properties: {
