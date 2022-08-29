@@ -19,12 +19,10 @@
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"]
   },
   "include": [
-    "./packages/**/src/**/*.ts",
-    "./packages/**/src/**/*.js",
-    "./packages/**/src/**/*.tsx",
-    "./packages/**/src/**/*.vue",
-    "./packages/**/tests/**/*.ts",
-    "./packages/**/tests/**/*.tsx",
+    "packages/**/**/**/*.ts",
+    "packages/**/**/**/*.js",
+    "packages/**/**/**/*.tsx",
+    "packages/**/**/**/*.vue",
     "shims-vue.d.ts"
   ],
   "exclude": ["node_modules"]

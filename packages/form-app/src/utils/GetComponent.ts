@@ -22,11 +22,12 @@ import {
   ArrayTable,
   ArrayTabs,
   ArrayCollapse,
-  // FormCollapse,//折叠面板
+  FormCollapse,//折叠面板
   FormStep,
   FormTab,
   FormDialog,
   FormDrawer,
+  Card,
   Editable,
   PreviewText,
   // TreeSelect,树选择
@@ -59,7 +60,7 @@ export const Plus = {
   ArrayTable,
   ArrayTabs,
   ArrayCollapse,
-  // FormCollapse,
+  FormCollapse,
   FormStep,
   FormTab,
   FormDialog,

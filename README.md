@@ -2,19 +2,51 @@
 
 ```js
 |-- SAAS-2.0
+    |-- .husky
     |-- node_module
     |-- packages
-    |   |-- node_module
     |   |-- form-app
     |   |   |-- node_module
     |   |   |-- dist
     |   |   |-- public
     |   |   |-- src
+    |   |   |   |-- api
+    |   |   |   |   |-- ...
+    |   |   |   |-- assest
+    |   |   |   |   |-- ...
+    |   |   |   |-- components
+    |   |   |   |   |-- ...
+    |   |   |   |-- router
+    |   |   |   |   |-- ...
+    |   |   |   |-- store
+    |   |   |   |   |-- ...
+    |   |   |   |-- utils
+    |   |   |   |   |-- ...
+    |   |   |   |-- views
+    |   |   |   |   |-- ...
+    |   |   |   |-- App.vue
+    |   |   |   |-- main.ts
     |   |-- m-form-app
     |   |   |-- node_module
     |   |   |-- dist
     |   |   |-- public
     |   |   |-- src
+    |   |   |   |-- api
+    |   |   |   |   |-- ...
+    |   |   |   |-- assest
+    |   |   |   |   |-- ...
+    |   |   |   |-- components
+    |   |   |   |   |-- ...
+    |   |   |   |-- router
+    |   |   |   |   |-- ...
+    |   |   |   |-- store
+    |   |   |   |   |-- ...
+    |   |   |   |-- utils
+    |   |   |   |   |-- ...
+    |   |   |   |-- views
+    |   |   |   |   |-- ...
+    |   |   |   |-- App.vue
+    |   |   |   |-- main.ts
     |-- .babelrc
     |-- .browserslistrc
     |-- .eslintrc.js
@@ -45,3 +77,7 @@
     yarn build:pc // form-app        
     yarn build:mobile// m-form-app    
 ```
+
+## 项目分包
+
+两个项目共一套用配置文件

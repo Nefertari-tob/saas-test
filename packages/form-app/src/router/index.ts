@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory,createWebHistory,RouteRecordRaw } from "vue-router";
+import { createRouter,createWebHistory,RouteRecordRaw } from "vue-router";
 import HomeView from "../views/HomeView.vue";
 
 const routes: Array<RouteRecordRaw> = [
@@ -20,15 +20,16 @@ const routes: Array<RouteRecordRaw> = [
 
 const router = createRouter({
   history: createWebHistory(process.env.BASE_URL),
+  // history: createWebHashHistory(process.env.BASE_URL),
   routes,
 });
 
-router.beforeEach(async (to, from) => {
-  if (to.query.code !== '1') {
-    console.log(to.query.code);
-    alert("此页面不存在");
-    router.go(-1);
-  }
-});
+// router.beforeEach(async (to, from) => {
+//   if (to.query.code !== '1') {
+//     console.log(to.query.code);
+//     alert("此页面不存在");
+//     router.go(-1);
+//   }
+// });
 
 export default router;

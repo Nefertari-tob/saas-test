@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const server = axios.create({
-  baseURL: "http://192.168.1.20:3000/mock/20/getScheam/form-schema",
+  baseURL: "/api/mock/20/getScheam",
   timeout: 1000,
   headers: {
     "Content-Type": "application/x-www-form-urlencoded",

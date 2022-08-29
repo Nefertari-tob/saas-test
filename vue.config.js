@@ -37,16 +37,14 @@ module.exports = defineConfig({
       "Access-Control-Allow-Origin": "*",
     },
     proxy: {
-      "/schema": {
+      "/api": {
         target: "http://192.168.1.20:3000",
         changeOrigin: true,
         ws: true,
-      },
-      "/api": {
-        target: "http://baidu.com",
-        changeOrigin: true,
-        ws: true,
-      },
+        pathRewrite:{
+          '/api':''
+        }
+      }
     },
   },
   transpileDependencies: true,
