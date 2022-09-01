@@ -1,13 +1,15 @@
 import request from "../utils/request.js";
+import { DataValue } from '../utils/type' 
+import { LocationQueryValue } from "vue-router";
 
-export function getFormSchema(pageId) {
+export function getFormSchema(pageId:LocationQueryValue | LocationQueryValue[]) {
   return request({
     url: `/page/${pageId}`,
     method: "GET",
   });
 }
 
-export function getData(code) {
+export function getData(code:LocationQueryValue | LocationQueryValue[]) {
   return request({
     url: "/schema-data",
     method: "GET",
@@ -17,7 +19,7 @@ export function getData(code) {
   });
 }
 
-export function Initialize(pageId,dataValue) {
+export function Initialize(pageId:LocationQueryValue | LocationQueryValue[],dataValue:DataValue) {
   return request({
     url: "/data/save",
     method: "post",
